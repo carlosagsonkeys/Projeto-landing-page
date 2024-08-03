@@ -1,0 +1,21 @@
+*{
+    background-color: rgb(247, 217, 217);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#titulo-principal{
+    background-color: rgb(246, 250, 7);
+    color: rgb(255, 0, 0);
+
+}
+
+#teste1{
+   color: rgb(8, 8, 8);
+}
+
+p{
+    text-align: justify;
+    margin: 25px;
+    color: rgb(0, 0, 0);
+}   

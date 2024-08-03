@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- Declara que este é um documento HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como Português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define o viewport para dispositivos móveis -->
+    <meta name="description" content="Curso gratuito de Introdução à Tecnologia da DNC School. Aprenda os principais fundamentos para construir experiências efetivas.">
+    <meta name="keywords" content="curso, tecnologia, gratuito, DNC School, fundamentos, experiências, efetivas">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pré-conecta ao servidor de fontes do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Pré-conecta ao servidor de fontes do Google com suporte a CORS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> <!-- Importa a fonte Inter do Google Fonts -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
+    <title>Escola DNC</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+
+    <!-- MENU SUPERIOR -->
+    <div id="menusuperior"> <!-- Div para o menu superior -->
+        <a href="https://www.escoladnc.com.br"> <!-- Link para a página da Escola DNC -->
+            <img src="./imagens/logo.svg" id="logo" alt="Logo da Escola DNC"> <!-- Logo da escola -->
+        </a>
+        <h1 id="titulo-menusuperior"> <!-- Título principal do menu superior -->
+            Dê os primeiros passos da <br>
+            sua carreira em Tecnologia
+        </h1>
+        <p id="texto-menusuperior"> <!-- Texto informativo do menu superior -->
+            Inscreva-se no curso gratuito de Introdução à <br> 
+            Tecnologia da DNC School e aprenda os principais <br> 
+            fundamentos para construir experiências efetivas. <br>
+        </p>
+    </div>
+
+    <!-- MENU INFORMACIONAL -->
+    <div id="menuinformacional"> <!-- Div para o menu informacional -->
+        <p class="textoinformativo"> <!-- Parágrafo com informações sobre certificados -->
+            <img src="imagens/icones/certificados.svg" class="icone" id="Certificado" alt="Ícone de Certificado">Certificado de conclusão
+        </p>
+        <p class="textoinformativo"> <!-- Parágrafo com informações sobre a duração do curso -->
+            <img src="imagens/icones/relogio.svg" class="icone" id="relogio" alt="Ícone de Relógio"> 4 horas de conteúdo
+        </p>
+        <p class="textoinformativo"> <!-- Parágrafo com informações sobre as aulas -->
+            <img src="imagens/icones/camera.svg" class="icone" id="camera" alt="Ícone de Câmera"> Aulas online gravadas
+        </p>
+    </div>
+
+    <!-- SEÇÃO VIDEO -->
+    <div id="secaovideo"> <!-- Div para a seção de vídeo -->
+        <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Vídeo incorporado do YouTube -->
+        <div>
+            <h1 id="titulovideo"> <!-- Título da seção de vídeo -->
+                Aprenda com especialistas e <br>
+                comece seu primeiro projeto
+            </h1>
+            <br><br>
+            <p id="textovideo"> <!-- Texto informativo da seção de vídeo -->
+                Conheça o processo de desenvolvimento e entenda como utilizar <br>
+                os principais métodos e ferramentas da área para resolver <br>
+                problemas complexos. <br>
+                Conquiste seu certificado e desenvolva um projeto prático <br>
+                para aplicar seus conhecimentos.
+            </p>
+        </div>
+    </div>
+
+    <!-- CARROSSEL -->
+    <div id="carrossel"> <!-- Div para o carrossel -->
+        <h1 id="titulo-carrosel"> <!-- Título do carrossel -->
+            Mais de 500 alunos já iniciaram seus estudos
+        </h1>
+        <!-- DIVISÃO CARDS -->
+        <div id="div-cards"> <!-- Div para os cards do carrossel -->
+            <img id="seta-esquerda" onclick="RolarParaEsquerda()" class="seta" src="./imagens/icones/seta-esquerda.svg" alt="Seta para a esquerda"> <!-- Seta esquerda para navegação -->
+            <img id="bruna" class="card" src="./cards/bruna.svg" alt="Foto da Bruna"> <!-- Card da Bruna -->
+            <img id="leonardo" class="card" src="./cards/leonardo.svg" alt="Foto do Leonardo"> <!-- Card do Leonardo -->
+            <img id="samanta" class="card" src="./cards/samanta.svg" alt="Foto da Samanta"> <!-- Card da Samanta -->
+            <img id="seta-direita" onclick="RolarParaDireita()" class="seta" src="./imagens/icones/seta-direita.svg" alt="Seta para a direita"> <!-- Seta direita para navegação -->
+        </div>
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div id="formulario"> <!-- Div para o formulário -->
+        <h1 id="titulo-formulario"> <!-- Título do formulário -->
+            Comece agora mesmo e dê o próximo passo da sua carreira
+        </h1>
+        <form action="https://api.sheetmonkey.io/form/xtLWNdQotFxorTPF57nxzG" method="post"> <!-- Formulário de inscrição -->
+            <input type="text" placeholder="Nome" name="Name" required> <br> <!-- Campo de entrada para o nome -->
+            <input type="email" placeholder="Email" name="Email" required> <br> <!-- Campo de entrada para o email -->
+            <input type="number" placeholder="Telefone" name="Telefone" required><br> <!-- Campo de entrada para o telefone -->
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" /> <!-- Campo oculto para data e hora da criação -->
+            <button type="submit"> Acesse a ementa grátis </button> <!-- Botão para acessar a ementa grátis -->
+        </form>
+    </div>
+
+    <script src="index.js"></script> <!-- Link para o arquivo JavaScript externo -->
+</body>
+</html>

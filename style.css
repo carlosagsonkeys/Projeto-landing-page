@@ -1,0 +1,160 @@
+/* Aplica um estilo padrão para todos os elementos */
+* {
+    margin: 0px; /* Remove a margem padrão dos elementos */
+    font-family: "inter"; /* Define a fonte padrão como Inter */
+}
+
+/* Estilo para o logo */
+#logo {
+    margin-top: 50px; /* Espaçamento acima do logo */
+    margin-left: 50px; /* Espaçamento à esquerda do logo */
+}
+
+/* Estilo para o título do menu superior */
+#titulo-menusuperior {
+    margin-top: 50px; /* Espaçamento acima do título */
+    margin-left: 150px; /* Espaçamento à esquerda do título */
+}
+
+/* Estilo para o texto do menu superior */
+#texto-menusuperior {
+    margin-top: 50px; /* Espaçamento acima do texto */
+    margin-left: 150px; /* Espaçamento à esquerda do texto */
+    padding-bottom: 100px; /* Espaçamento abaixo do texto */
+}
+
+/* Estilo para o menu superior */
+#menusuperior {
+    background-image: url(imagens/fundo-menusuperior.svg); /* Define a imagem de fundo do menu superior */
+    color: aliceblue; /* Define a cor do texto no menu superior */
+}
+
+/* Estilo para o menu informacional */
+#menuinformacional {
+    background-color: #eaece5e0; /* Cor de fundo do menu informacional */
+    display: grid; /* Usa grid layout para o menu informacional */
+    grid-auto-flow: column; /* Organiza os itens em uma coluna */
+    columns: auto; /* Define as colunas automaticamente */
+}
+
+/* Estilo para ícones no menu informacional */
+.icone {
+    margin: 50px 0px 50px 100px; /* Espaçamento ao redor dos ícones */
+    padding: 15px; /* Espaçamento interno dos ícones */
+}
+
+/* Estilo para a seção de vídeo */
+#secaovideo {
+    display: grid; /* Usa grid layout para a seção de vídeo */
+    grid-auto-flow: column; /* Organiza os itens em uma coluna */
+    columns: auto; /* Define as colunas automaticamente */
+}
+
+/* Estilo para textos informativos na seção de vídeo */
+.textoinformativo {
+    display: flex; /* Usa flexbox para alinhamento dos itens */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+}
+
+/* Estilo para o título do vídeo */
+#titulovideo {
+    color: #247BA0; /* Cor do texto do título do vídeo */
+    margin-top: 50px; /* Espaçamento acima do título */
+}
+
+/* Estilo para o iframe do vídeo */
+#video {
+    margin: 50px 25px 50px 100px; /* Espaçamento ao redor do vídeo */
+}
+
+/* Estilo para a seção de carrossel */
+#carrossel {
+    background-color: #247BA0; /* Cor de fundo do carrossel */
+    padding: 50px; /* Espaçamento interno do carrossel */
+}
+
+/* Estilo para o título do carrossel */
+#titulo-carrosel {
+    color: #EAECE5; /* Cor do texto do título do carrossel */
+    text-align: center; /* Centraliza o texto do título */
+    font-size: 25px; /* Tamanho da fonte do título */
+}
+
+/* Estilo para a divisão dos cards no carrossel */
+#div-cards {
+    display: grid; /* Usa grid layout para a divisão dos cards */
+    grid-auto-flow: column; /* Organiza os itens em uma coluna */
+}
+
+/* Estilo para cada card no carrossel */
+.card {
+    margin-left: 50px; /* Espaçamento à esquerda dos cards */
+}
+
+/* Estilo para a seta esquerda no carrossel */
+#seta-esquerda {
+    display: none; /* Oculta a seta esquerda por padrão */
+}
+
+/* Estilo para o card de 'bruna' no carrossel */
+#bruna {
+    display: none; /* Oculta o card de 'bruna' por padrão */
+}
+
+/* Estilo para as setas de navegação no carrossel */
+.seta {
+    margin-top: 55%; /* Espaçamento acima das setas */
+    cursor: pointer; /* Muda o cursor para uma mãozinha quando sobre as setas */
+}
+
+/* Estilo para as setas ao passar o mouse */
+.seta:hover {
+    transform: translateY(-7px); /* Move a seta 7 pixels para cima */
+    transition-duration: 0.8ms; /* Duração da transição para o efeito hover */
+}
+
+/* Estilo para o formulário */
+#formulario {
+    text-align: center; /* Centraliza o texto do formulário */
+}
+
+/* Estilo para o título do formulário */
+#titulo-formulario {
+    font-size: 25px; /* Tamanho da fonte do título do formulário */
+    margin: 25px; /* Espaçamento ao redor do título */
+    color: #383838; /* Cor do texto do título */
+}
+
+/* Estilo para os campos de entrada do formulário */
+input {
+    width: 300px; /* Largura dos campos de entrada */
+    height: 40px; /* Altura dos campos de entrada */
+    margin: 15px; /* Espaçamento ao redor dos campos de entrada */
+    border: 0px; /* Remove a borda dos campos de entrada */
+    border-radius: 5px; /* Cantos arredondados dos campos de entrada */
+    background-color: #EAECE5; /* Cor de fundo dos campos de entrada */
+    padding-left: 10px; /* Espaçamento interno à esquerda dos campos de entrada */
+}
+
+/* Estilo para os botões */
+button {
+    margin-top: 15px; /* Espaçamento acima do botão */
+    width: 250px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    background-color: #247BA0; /* Cor de fundo do botão */
+    color: #EAECE5; /* Cor do texto do botão */
+    border: 0px; /* Remove a borda do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    margin-bottom: 75px; /* Espaçamento abaixo do botão */
+    font-weight: bolder; /* Deixa o texto do botão em negrito */
+    cursor: pointer; /* Muda o cursor para uma mãozinha quando sobre o botão */
+}
+
+/* Estilo para o botão ao passar o mouse */
+button:hover {
+    background-color: #2b9aca; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    transform: translateY(-7px); /* Move o botão 7 pixels para cima */
+    box-shadow: 0px 15px 20px #005b80; /* Sombra projetada, deslocada 15 pixels para baixo e 20 pixels borrada */
+    transition: background-color 0.30s, color 0.30s, transform 0.30s, box-shadow 0.30s; /* Duração da transição para todas as propriedades */
+}
